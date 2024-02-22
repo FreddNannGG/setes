@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    
+    
+    <ImageView
+        android:id="@+id/ivJedi"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        tools:background="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvJediName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text = "FreddNaann"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivJedi"/>
+
+    <TextView
+        android:id="@+id/tvRango"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text = "Maestro Jedi"
+        app:layout_constraintTop_toBottomOf="@+id/tvJediName"
+        app:layout_constraintStart_toEndOf="@+id/ivJedi"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
